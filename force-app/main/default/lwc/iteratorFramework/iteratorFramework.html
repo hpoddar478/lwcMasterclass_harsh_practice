@@ -1,0 +1,25 @@
+<template>
+
+    <lightning-card title="My Task List">
+        <p class="slds-p-horizontal_small">
+            <template for:each={taskList} for:item="task">
+                <div key={task.taskId}>
+                    <p>{task.taskName} - {task.status} - {task.priority}</p>
+                </div>
+            </template>
+        </p>
+        <p slot="footer">All the best</p>
+    </lightning-card>
+
+    <lightning-card title="My Task List via iterators">
+        <p class="slds-p-horizontal_small">
+            <template iterator:task={taskList}>
+                <div key={task.value.taskId}>
+                    <p>{task.value.taskName} - {task.value.status} - {task.value.priority}</p>
+                </div>
+            </template>
+        </p>
+        <p slot="footer">All the best</p>
+    </lightning-card>
+
+</template>

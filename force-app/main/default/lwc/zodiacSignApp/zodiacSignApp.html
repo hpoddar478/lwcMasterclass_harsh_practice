@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Hello Welcome to Advance Zodiac Predictor App">
+        <lightning-input class="slds-m-around_x-small" value={userName} onchange={handleNameChange} type="Name" label="Enter your name"></lightning-input>
+        <lightning-input class="slds-m-around_x-small" value={userBirthDate} onchange={handleDateChange} type="date" label="Enter a date"></lightning-input>
+        <lightning-button variant="brand" label="Submit" onchange={handleSubmit} class="slds-align_absolute-center"></lightning-button>
+    </lightning-card>
+</template>

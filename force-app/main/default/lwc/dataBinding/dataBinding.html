@@ -1,0 +1,15 @@
+<template>
+   <lightning-card class="slds-card" title="One way binding">
+      <p class="slds-p-around_large">My wife name is {userName} and her subscriber count is {subscriberScore} at
+         {currentTime}
+         your total watch lesssons are {totalLessonsWatched}
+      </p>
+   </lightning-card>
+
+   <lightning-card class="slds-card" title="Two way binding">
+      <lightning-input class="slds-p-around_large" value={memberStatus} onchange={updateMemberStatus} type="text"
+         label="Enter your status here"></lightning-input>
+      <p class="slds-p-around_large"> Value typed is : {memberStatus} </p>
+   </lightning-card>
+
+</template>
